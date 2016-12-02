@@ -304,7 +304,7 @@ class Helper extends DHelper implements IHelper
             return $evEnd + $evLength > $startStamp && $evStart < $endStamp;
         });
 
-        return $data;
+        return array_values($data);
     }
 
 	/**
